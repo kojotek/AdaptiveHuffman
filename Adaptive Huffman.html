@@ -17,7 +17,7 @@ html *
 	NYTKey = 0;
 	RootKey = 0;
 	lastModifiedNode = null;
-	lastEncodedCharacter = "";
+	//lastEncodedCharacter = "";
 	codeList = [];
 	charsInTree = [];
 	codeBook = {};
@@ -156,9 +156,9 @@ html *
 				lastModifiedNode = null;
 				updateCodes();					//aktualizujemy wartosci kodow
 				
-				if(lastEncodedCharacter != ""){
+				//if(lastEncodedCharacter != ""){
 					//encoded += codeBook[lastEncodedCharacter] + " ";	//przeslij kod znaku
-				}
+				//}
 				
 				displayCodes();
 				
@@ -197,9 +197,9 @@ html *
 		
 		updateCodes();
 		
-		if(lastEncodedCharacter != ""){
+		//if(lastEncodedCharacter != ""){
 			//encoded += codeBook[lastEncodedCharacter] + " ";	//przeslij kod znaku
-		}
+		//}
 		
 		displayCodes();
 		
@@ -272,7 +272,7 @@ html *
 
 			encoded += codeBook["[NYT]"] + " ";
 			encoded += "[" + c + "]" + " ";	//przeslij kod stalej dlugosci
-			lastEncodedCharacter = "";
+			//lastEncodedCharacter = "";
 			return addNewEntry(c);
 		}
 		else{
@@ -436,7 +436,7 @@ html *
 		NYTKey = 0;
 		RootKey = 0;
 		lastModifiedNode = null;
-		lastEncodedCharacter = "";
+		//lastEncodedCharacter = "";
 		codeList = [];
 		charsInTree = [];
 		codeBook = {};
