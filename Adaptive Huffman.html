@@ -8,8 +8,14 @@
 html *
 {
    font-size: 16px !important;
-   color: #000 !important;
+   color: #000;
    font-family: Consolas !important;
+}
+
+mark
+{
+	background: #000; 
+	color: #FFF;
 }
 </style>
 <script id="code">
@@ -261,7 +267,11 @@ html *
 	function processCharacter(c){
 
 		var node = getNodeByProperty("character", c);
-		original += c;
+		if (c == "_space_"){
+			original += "<mark>_space_</mark>";
+		}
+		else
+			original += c;
 		
 		if(!node){
 			charsInTree.push(c);
